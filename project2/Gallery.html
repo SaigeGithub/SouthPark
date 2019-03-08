@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+
+	 <link rel="stylesheet" href="new  3.css">
+	<link rel="stylesheet" href="../lib/jquery.mobile-1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<link href="../photoswipe.css" type="text/css" rel="stylesheet" />
+	<style type="text/css">
+		div.gallery-row:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+		div.gallery-item { float: left; width: 33.333333%; }
+		div.gallery-item a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+		div.gallery-item img { display: block; width: 100%; height: auto; }
+		#Gallery1 .ui-content, #Gallery2 .ui-content { overflow: hidden; }
+	</style>
+	
+	<script type="text/javascript" src="../lib/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery.mobile-1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+	
+	<script type="text/javascript" src="../lib/simple-inheritance.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery.animate-enhanced.min.js"></script>
+	
+	<script type="text/javascript" src="../code-photoswipe-jQuery-1.0.11.min.js"></script>
+	
+	
+	<script type="text/javascript">
+		
+		/*
+			This example shows how to set up PhotoSwipe using jQuery Mobile.
+		*/
+		
+		$(document).ready(function(){
+			
+			$('div.gallery-page').live('pageshow', function(e){
+					
+				// Re-initialize with the photos for the current page
+				$("div.gallery a", e.target).photoSwipe();
+				return true;
+				
+			})
+				
+		});
+	
+	</script>
+	
+</head> 
+<body> 
+
+
+<div data-role="page" id="Home">
+
+		<div id="wordmark"> <img src="img\wordmark2.png" alt="Stanford" width="220" height="50" /> </div>
+	
+	<div data-role="content" >	
+		
+		<h1 p1 style="font-weight:bold;color:#D94011;letter-spacing:2pt;word-spacing:2pt;font-size:30px;text-align:left;font-family:arial black, sans-serif;line-height:1;margin:0px;padding:0px;text-align:center">Gallery of SouthPark</h1>	
+	<img src="img/south_park_folder_icon_by_chargerlevani-d4nrc4p.png"style="margin: 0 auto;
+	display: block;" width=100% height=auto/>		
+		
+		<ul data-role="listview" data-inset="true">
+			<li><a href="#Gallery1" style="text-align:center">Let's start!</a></li> 
+			
+		</ul> 
+		
+		
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+   <div data-role="navbar">
+      <ul>
+           <li><a href="home.html"rel="external" >HOME</a></li>
+         <li><a href="intro.html"rel="external">Intro</a></li>
+		 <li><a href="characters.html"rel="external">characters</a></li>
+		 <li><a href="Gallery.html"rel="external"class="ui-btn-active">Gallery</a></li>
+		 <li><a href="About.html"rel="external">About</a></li>
+      </ul>
+   </div>
+</div>
+
+</div>
+
+
+<div data-role="page" id="Gallery1" class="gallery-page">
+
+	<div id="wordmark"> <img src="img\wordmark2.png" alt="Stanford" width="220" height="50" /> </div>
+
+	<div data-role="content">	
+		
+		<div class="gallery">
+	
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="img/BZkEGJJCcAAi-D5.jpg" rel="external"><img src="img/BZkEGJJCcAAi-D5.jpg" alt="Image 001" /></a></div>
+				
+				<div class="gallery-item"><a href="img/BZeZQmbCYAEvgPK.jpg" rel="external"><img src="img/BZeZQmbCYAEvgPK.jpg" alt="Image 002" /></a></div>
+				
+				<div class="gallery-item"><a href="img/Randy_Marsh.jpg" rel="external"><img src="img/Randy_Marsh.jpg" alt="Image 003" /></a></div>
+				
+			</div>
+
+		
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="img/Princess_Kenny.png" rel="external"><img src="img/Princess_Kenny.png" alt="Image 004" /></a></div>
+				
+				<div class="gallery-item"><a href="img/SongofAssandFire00042.png" rel="external"><img src="img/SongofAssandFire00042.png" alt="Image 005" /></a></div>
+				
+				<div class="gallery-item"><a href="img/blog_newIntro_busRide.jpg" rel="external"><img src="img/blog_newIntro_busRide.jpg" alt="Image 006" /></a></div>
+		
+			</div>
+		
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="img/sp-1703-cartmanAndToken.jpeg" rel="external"><img src="img/sp-1703-cartmanAndToken.jpeg" alt="Image 007" /></a></div>
+				
+				<div class="gallery-item"><a href="img/sp_s17e01_blog_PremiereLetGoLetGov (1).jpg" rel="external"><img src="img/sp_s17e01_blog_PremiereLetGoLetGov (1).jpg" alt="Image 008" /></a></div>
+				
+				<div class="gallery-item"><a href="img/101169472750.jpg" rel="external"><img src="img/101169472750.jpg" alt="Image 009" /></a></div>
+
+			</div>
+		
+		
+		</div>
+		
+	</div>
+	
+	<div data-role="footer" data-position="fixed">
+   <div data-role="navbar">
+      <ul>
+           <li><a href="home.html"rel="external" >HOME</a></li>
+         <li><a href="intro.html"rel="external">Intro</a></li>
+		 <li><a href="characters.html"rel="external">characters</a></li>
+		 <li><a href="Gallery.html"rel="external"class="ui-btn-active">Gallery</a></li>
+		 <li><a href="About.html"rel="external">About</a></li>
+      </ul>
+   </div>
+</div>
+	
+</div>
+
+
+
+
+</body>
+</html>

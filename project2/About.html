@@ -1,0 +1,89 @@
+<head>
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css">
+ <link rel="stylesheet" href="new  3.css">
+ <script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+ <script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="home">
+<div id="wordmark"> <img src="img/wordmark2.png" alt="Stanford" width="220" height="50" /> </div>
+
+   <div data-role="content" >
+    <h1 style="font-weight:bold;color:#D94011;letter-spacing:2pt;word-spacing:2pt;font-size:30px;text-align:left;font-family:arial black, sans-serif;line-height:1;margin:0px;padding:0px;text-align:center">All about SouthPark Guide app</h1>
+	<p class="mycss">Q1:What does the app do?
+	<br>The idea of this app it to create a app for all the fans of southpark, which contain all the information about it.
+	The users can check to see the brief intro of the animation,or check the chart to find his favourite character and get to know the detail information of him/her
+	It is like a wikipedia just for southpark. Anyway,the users can also enjoy the gallery of the funny pic in southpark.</p>
+	<p class="mycss">Q2:What are the features of it?
+	<br>This web app will change the appearance to suit browser,so it is convenient for mobile phone users.Compared to an actual app in ios/Android,it do not
+	need to install,you can use it anyplace in any machine.
+	<br>Besides that, the app is easy to use, it has a straight forward operation interface,you just need to click the navigation bars and everything is done.</p>
+	<p class="mycss">Q3:How does it fill in the need of market place?
+	<br>There are southpark fans all around the world but there is not a one web designed for phone about the informations of southpark.
+	I have see some applications designed for games and animation, for example the ACNL Guide in ios platform(Animal Crossing Guide), and it is really helpful!
+	And my app is kind of similar to it, which means it has commercial value in some way</p>
+	<p class="mycss">Q4:What reference did you use to create it?
+	<br>Well,basically,I use jQuery mobile to build it. But I also check some model and demos as examples to do it.
+	Here are two of them. <a href="http://www.photoswipe.com/latest/examples/04-jquery-mobile.html">Photoswipe</a>
+	<a href="http://www.inpixelitrust.fr/demos/restaurant_picker/">Restaurant Picker</a>
+	    <p class="mycss">Q5:Are there any missing functions or are there any thing you want to add in the near future?
+		<br>I'm sorry but this app it not completed now,check here to see the description of missing functionality
+		<a href="#Cars">Description of missing functionality</a></p>
+	  <a href="#dialogPopUp" data-rel="dialog" data-role="button">Click to see picture of Design</a> 
+	  </div><!-- /content -->
+<div data-role="footer" data-position="fixed">
+   <div data-role="navbar">
+      <ul>
+         <li><a href="home.html"rel="external" >HOME</a></li>
+         <li><a href="intro.html"rel="external">Intro</a></li>
+		 <li><a href="characters.html"rel="external">characters</a></li>
+		 <li><a href="Gallery.html"rel="external">Gallery</a></li>
+		 <li><a href="About.html"rel="external"class="ui-btn-active">About</a></li>
+      </ul>
+   </div><!-- /navbar -->
+</div><!-- /footer -->
+</div><!-- /page -->
+
+   <div data-role="page" id="dialogPopUp">
+   <div data-role="header">
+      <h1>Design for SouthPark fan app</h1>
+   </div><!-- /header -->
+   <div data-role="content">   
+      <img src="img/120.jpg" alt="kyle" width=auto height=auto/>
+	 <img src="img/dssd6.jpg" alt="kyle" width=auto height=auto/>
+   </div><!-- /content -->
+<div data-role="footer">
+<h4></h4>
+</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="Cars">
+   <div data-role="header">
+      <h1>Description of missing functionality</h1>
+   </div><!-- /header -->
+   <div data-role="content">   
+      <p class="mycss">What is missing?
+	  <br>In the character section, any category the users click will go to the page of "boys", the other parts are missing because I haven't find all the data and upload to the server.
+	  <br>I am going to update more information by collecting picture and introduction of all the characters in southpark official website so if you click in Girls after I update it.
+	  It will show a interface like this.
+	  <img src="img/IMG_3073.JPG"/width=auto height=500px>
+	  The category of adults and non-human is the same structure as shown above .</p>
+	  <p class="mycss">What else can we improve?
+	  <br>Anyway, I am considering adding some fantastic and cool function on this app.
+	  The first one is shown in the picture above,I want to add an rating system for users to rate their favourite characters, I may use database in the cloud to save data.
+	  And I also want to improve the personal information page of each character as shown below.
+	  <img src="img/IMG_3075.JPG"/width=auto height=500px> So that it will not only contain the intro of the character but also the gallery and videos of him. 
+   </div><!-- /content -->
+ <div data-role="footer" data-position="fixed">
+   <div data-role="navbar">
+      <ul>
+         <li><a href="home.html"rel="external" >HOME</a></li>
+         <li><a href="intro.html"rel="external">Intro</a></li>
+		 <li><a href="characters.html"rel="external">characters</a></li>
+		 <li><a href="Gallery.html"rel="external">Gallery</a></li>
+		 <li><a href="About.html"rel="external"class="ui-btn-active">About</a></li>
+      </ul>
+   </div><!-- /navbar -->
+</div><!-- /footer -->
+</div><!-- /page -->
+</body>
